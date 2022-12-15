@@ -1,0 +1,16 @@
+{
+  "pipeline": {
+    "name": "test-processor"
+  },
+  "description": "Custom processor for testing.",
+  "transform": {
+    "cmd": [ "python3", "/main.py" ],
+    "image": "pachy-test-processor:latest"
+  },
+  "input": {
+    "pfs": {
+      "repo": "images",
+      "glob": "/*"
+    }
+  }
+}
